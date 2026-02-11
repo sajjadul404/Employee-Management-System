@@ -10,8 +10,11 @@ class employee:
 
 
         #......Fram1......
-        self.Fram1 = tk.Frame(self.root, bd=5, relief="groove", width=350, height=550)
-        self.Fram1.place(x=10, y=80)
+        self.Fram1 = tk.Frame(self.root, bd=5, relief="groove")
+        self.Fram1.place(x=10, y=80,width=350, height=550)
+
+        self.idLable = tk.Label(self.Fram1, padx=5, text="Employee ID",bg="lightblue",fg="white", font=("Arial", 14, "bold"),pady=10)
+        self.idLable.grid(row=0, column=0)
 
 
         #......Fram2......
