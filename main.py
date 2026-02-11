@@ -1,5 +1,11 @@
-print ("Employee-Management-System")
-print ("Sajjadul Islam")
-print ("01560060092")
-print ("Employee-Management-System")
-print ("Sajjadul Islam")
+import tkinter as tk
+
+class employee:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Employee Management System")
+
+root = tk.Tk()
+obj = employee(root)
+root.mainloop()
+     
