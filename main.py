@@ -18,6 +18,11 @@ class employee:
         self.idIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
         self.idIn.grid(row=0, column=1,pady=10)
 
+        self.nameLable = tk.Label(self.Fram1, padx=5, text="Employee Name:",fg="Black",bg="lightblue", font=("Arial", 14, "bold"),pady=10)
+        self.nameLable.grid(row=1, column=0)
+        self.nameIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
+        self.nameIn.grid(row=1, column=1,pady=10)
+
 
         #......Fram2......
         self.Fram2 = tk.Frame(self.root, bd=5, relief="groove", width=900, height=550)
