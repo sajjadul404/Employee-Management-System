@@ -23,10 +23,12 @@ class employee:
         self.nameIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
         self.nameIn.grid(row=1, column=1,pady=10)
 
-        self.desigLable = tk.Label(self.Fram1, padx=5, text="Employee Designation:",fg="Black",bg="lightblue", font=("Arial", 14, "bold"),pady=10)
+        self.desigLable = tk.Label(self.Fram1, padx=5, text="Designation:",fg="Black",bg="lightblue", font=("Arial", 14, "bold"),pady=10)
         self.desigLable.grid(row=2, column=0)
         self.desigIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
         self.desigIn.grid(row=2, column=1,pady=10)
+
+        
 
 
         #......Fram2......
