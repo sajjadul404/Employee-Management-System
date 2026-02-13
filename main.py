@@ -45,6 +45,13 @@ class employee:
         self.addrIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
         self.addrIn.grid(row=5, column=1,pady=10)
 
+
+        #......Button Fram......
+        self.btnFram = tk.Frame(self.root, bd=5, width=340, height=150,bg="lightblue",relief="raised")
+        self.btnFram.place(x=25, y=400)
+        self.btnFram
+
+
         
         #......Fram2......
         self.Fram2 = tk.Frame(self.root, bd=5, relief="groove", width=870, height=550)
