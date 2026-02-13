@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 
 class employee:
     def __init__(self, root):
@@ -33,6 +34,11 @@ class employee:
         self.salIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
         self.salIn.grid(row=3, column=1,pady=10)
 
+        self.genLable = tk.Label(self.Fram1, padx=5, text="Gender:",fg="Black",bg="lightblue", font=("Arial", 14, "bold"),pady=10)
+        self.genLable.grid(row=4, column=0)
+        self.genIn = ttk.Combobox(self.Fram1, font=("Arial", 14), width=13, state="readonly")
+        self.genIn['values'] = ("Male", "Female", "Other")
+        self.genIn.grid(row=4, column=1,pady=10)
 
 
         
