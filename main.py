@@ -40,8 +40,10 @@ class employee:
         self.genIn['values'] = ("Male", "Female", "Other")
         self.genIn.grid(row=4, column=1,pady=10)
 
-
-
+        self.addrLable = tk.Label(self.Fram1, padx=5, text="Address:",fg="Black",bg="lightblue", font=("Arial", 14, "bold"),pady=10)
+        self.addrLable.grid(row=5, column=0)
+        self.addrIn = tk.Entry(self.Fram1, font=("Arial", 14), width=15)
+        self.addrIn.grid(row=5, column=1,pady=10)
 
         
         #......Fram2......
