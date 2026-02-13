@@ -12,7 +12,7 @@ class employee:
 
         #......Fram1......
         self.Fram1 = tk.Frame(self.root, bd=5, relief="groove",bg="lightblue")
-        self.Fram1.place(x=10, y=80,width=360, height=550)
+        self.Fram1.place(x=10, y=80,width=370, height=550)
 
         self.idLable = tk.Label(self.Fram1, padx=5, text="Employee ID:",fg="Black",bg="lightblue", font=("Arial", 14, "bold"),pady=10)
         self.idLable.grid(row=0, column=0)
@@ -41,10 +41,12 @@ class employee:
         self.genIn.grid(row=4, column=1,pady=10)
 
 
+
+
         
         #......Fram2......
-        self.Fram2 = tk.Frame(self.root, bd=5, relief="groove", width=880, height=550)
-        self.Fram2.place(x=380, y=80)
+        self.Fram2 = tk.Frame(self.root, bd=5, relief="groove", width=870, height=550)
+        self.Fram2.place(x=400, y=80)
 
 
 
