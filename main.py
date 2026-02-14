@@ -68,7 +68,7 @@ class employee:
         self.Fram2 = tk.Frame(self.root, bd=5, relief="groove", width=870, height=550)
         self.Fram2.place(x=400, y=80)
 
-        self.searchLable = tk.Label(self.Fram2, padx=5, text="Search By:",fg="Black",bg="white", font=("Arial", 14, "bold"),pady=10)
+        self.searchLable = tk.Label(self.Fram2, padx=5, text="Search By:",fg="Black",bg="lightyellow", font=("Arial", 14, "bold"),pady=10)
         self.searchLable.grid(row=0, column=0)
         self.searchType = ttk.Combobox(self.Fram2, font=("Arial", 14), width=13, state="readonly")
         self.searchType['values'] = ("ID", "Name")
@@ -79,6 +79,9 @@ class employee:
 
         self.searchbtn = tk.Button(self.Fram2,text="Search",width=10, font=("Arial", 14, "bold"))
         self.searchbtn.grid(row=0,column=3,padx=5,pady=10)
+
+        self.showbtn = tk.Button(self.Fram2,text="Show All",width=10, font=("Arial", 14, "bold"))
+        self.showbtn.grid(row=0,column=4,padx=10,pady=10)
 
 
 root = tk.Tk()
