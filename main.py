@@ -63,11 +63,17 @@ class employee:
         self.cleartebtn.grid(row=1,column=1,padx=20,pady=10)
 
 
-
         
         #......Fram2......
         self.Fram2 = tk.Frame(self.root, bd=5, relief="groove", width=870, height=550)
         self.Fram2.place(x=400, y=80)
+
+        self.searchLable = tk.Label(self.Fram2, padx=5, text="Search By:",fg="Black",bg="lemonchiffon", font=("Arial", 14, "bold"),pady=10)
+        self.searchLable.grid(row=0, column=0)
+        self.searchType = ttk.Combobox(self.Fram2, font=("Arial", 14), width=13, state="readonly")
+        self.searchType['values'] = ("ID", "Name")
+        self.searchType.grid(row=0, column=1,pady=10)
+
 
 
 
