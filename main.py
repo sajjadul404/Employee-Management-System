@@ -77,6 +77,9 @@ class employee:
         self.searchIn = tk.Entry(self.Fram2, font=("Arial", 14), width=15)
         self.searchIn.grid(row=0, column=2,pady=10)
 
+        self.searchbtn = tk.Button(self.Fram2,text="Search",width=10, font=("Arial", 14, "bold"))
+        self.searchbtn.grid(row=0,column=3,padx=5,pady=10)
+
 
 root = tk.Tk()
 obj = employee(root)
