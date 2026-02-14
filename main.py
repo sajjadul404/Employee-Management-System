@@ -47,10 +47,14 @@ class employee:
 
 
         #......Button Fram......
-        self.btnFrame = tk.Frame(self.root, bd=5, width=340, height=150,bg="lightblue",relief="raised")
-        self.btnFrame.place(x=25, y=400)
-        self.addbtn = tk.Button(self.btnFrame,width=10, font=("Arial", 14, "bold"))
-        self.addbtn.grid(row=0,column=0)
+        self.btnFrame = tk.Frame(self.root, bd=5,bg="lightblue",relief="raised")
+        self.btnFrame.place(x=25, y=380, width=340, height=150)
+
+        self.addbtn = tk.Button(self.btnFrame,text="Add",width=10, font=("Arial", 14, "bold"))
+        self.addbtn.grid(row=0,column=0,padx=20,pady=20)
+
+        self.updatebtn = tk.Button(self.btnFrame,text="Update",width=10, font=("Arial", 14, "bold"))
+        self.updatebtn.grid(row=0,column=1,padx=20,pady=20)
 
 
         
