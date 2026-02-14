@@ -56,6 +56,10 @@ class employee:
         self.updatebtn = tk.Button(self.btnFrame,text="Update",width=10, font=("Arial", 14, "bold"))
         self.updatebtn.grid(row=0,column=1,padx=20,pady=20)
 
+        self.deletebtn = tk.Button(self.btnFrame,text="Delete",width=10, font=("Arial", 14, "bold"))
+        self.deletebtn.grid(row=1,column=0,padx=20,pady=20)
+
+
 
         
         #......Fram2......
